@@ -14,7 +14,7 @@ int main(int argc, char *argv[]){
 
     time(&now);
     clock = localtime(&now);
-    day = clock->tm_yday;
+    day = clock->tm_mday;
     month = clock->tm_mon;
     year = clock->tm_year + 1900;
     
